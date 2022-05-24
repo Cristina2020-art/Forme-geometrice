@@ -1,0 +1,38 @@
+CSS
+.wrapper{
+    text-align: center;
+}
+.wrapper > div{
+    display: inline-block;
+    margin: 20px;
+}
+#circle{
+    border: 3px solid black;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+}
+#triangle{
+    width: 0%;
+    height: 0%;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 100px solid black;
+    position: relative;
+}
+#triangle:after{
+    content: '';
+    position: absolute;
+    top: 5px;
+    left: -45px;
+    width: 0%;
+    height: 0%;
+    border-left: 45px solid transparent;
+    border-right: 45px solid transparent;
+    border-bottom: 92px solid white;
+}
+#square{
+    border: 3px solid black;
+    width: 85px;
+    height: 85px;
+}
